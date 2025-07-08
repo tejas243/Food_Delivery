@@ -32,3 +32,27 @@ A modern and responsive **Food Delivery Website Frontend** built using **React.j
 ```bash
 git clone https://github.com/your-username/food-delivery-frontend.git
 cd food-delivery-frontend
+```
+2. **Install the dependency**
+
+```bash
+npm install
+```
+3. **Run The App**
+
+```bash
+npm start
+```
+
+## 📌 Folder Structure
+📦food-delivery-frontend
+ ┣ 📂public
+ ┣ 📂src
+ ┃ ┣ 📂components
+ ┃ ┣ 📂pages
+ ┃ ┣ 📂assets
+ ┃ ┗ App.js
+ ┣ .gitignore
+ ┣ package.json
+ ┗ README.md
+
