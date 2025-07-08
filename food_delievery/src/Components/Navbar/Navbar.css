@@ -1,0 +1,142 @@
+.navbar{
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.navbar .logo{
+  width: 150px;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  color: #49557e;
+  font-size: 18px;
+  transition: all 0.3s;
+}
+
+.navbar-right{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.navbar button {
+  background: transparent;
+  font-size: 16px;
+  color: #49557e;
+  border: 1px solid tomato;
+  padding: 10px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navbar button:hover {
+  background-color: #d0cfbf;
+}
+
+.navbar .active {
+  padding-bottom: 2px;
+  border-bottom: 2px solid #49557e;
+}
+
+.navbar li{
+  cursor: pointer;
+}
+
+.navbar-search-icon {
+  position: relative;
+}
+
+.navbar-search-icon .dot {
+  position: absolute;
+  min-width: 10px;
+  min-height: 10px;
+  background-color: tomato;
+  border-radius: 5px;
+  top: -8px;
+  right: -8px;
+}
+
+/* Hamburger icon styles */
+.navbar-hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+  justify-content: space-between;
+}
+
+.navbar-hamburger span {
+  display: block;
+  height: 4px;
+  background: #49557e;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+@media (max-width:1050px) {
+  .navbar .logo {
+    width: 140px;
+  }
+  .navbar-menu{
+    gap: 20px;
+    font-size: 17px;
+  }
+  .navbar-right {
+    gap: 30px;
+  }
+  .navbar-right img{
+    gap: 22px;
+  }
+  .navbar-right button{
+    padding: 8px 25px;
+  }
+}
+
+@media (max-width:900px) {
+  .navbar .logo {
+    width: 120px;
+  }
+  .navbar-menu{
+    gap: 15px;
+    font-size: 16px;
+  }
+  .navbar-right {
+    gap: 20px;
+  }
+  .navbar-right img{
+    gap: 20px;
+  }
+  .navbar-right button{
+    padding: 7px 20px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width:750px) {
+  .navbar-menu{
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    gap: 0;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    z-index: 100;
+  }
+  .navbar-menu.open {
+    display: flex;
+  }
+  .navbar-hamburger {
+    display: flex;
+  }
+}
