@@ -7,7 +7,7 @@ const PlaceOrder = () => {
   const [orderPlaced, setOrderPlaced] = useState(false);
   const { cartItems, food_list } = useContext(StoreContext);
 
-  // Build order summary from cart
+  
   const items = food_list.filter(item => cartItems[item._id] > 0).map(item => ({
     name: item.name,
     qty: cartItems[item._id],
